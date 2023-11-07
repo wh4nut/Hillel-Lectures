@@ -33,19 +33,19 @@ const sportChoosing = prompt(
 	`Pick one: ${bascketball}, ${football}, ${racing}`
 );
 
-if (bascketball == 'Bascketball') {
+if (sportChoosing == bascketball) {
 	alert(`So, you wanna b like ${bascketballPlayer}, honey?`);
-} else if (football == 'Football') {
+} else if (sportChoosing == football) {
 	alert(`Big power, it's a big responsibility. 
 		  (c)${footballPlayer}
 
 		 p.s.: Nah! It was a Peter Parkers uncle.`);
-} else if (racing == 'Racing') {
+} else if (sportChoosing == racing) {
 	alert(`Wanna drive fast as ${racer}? Keep save)`);
+} else if (sportChoosing == '') {
+	alert('Шкода що спорт вас не цікавить :(');
 } else {
 	alert(`
 	You're sport: ${sportChoosing}.
 	`);
 }
-
-
